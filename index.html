@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>竹田Tキャンプ 冊子アーカイブ</title>
+    <title>竹田Tキャンプ 10周年デジタルアーカイブ</title>
     <style>
-        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; background: #f0f2f5; color: #333; padding: 40px 20px; line-height: 1.6; }
-        .container { max-width: 850px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        h1 { border-bottom: 3px solid #333; padding-bottom: 20px; margin-bottom: 40px; text-align: center; font-size: 28px; letter-spacing: 1px; }
-        .book-row { display: flex; justify-content: space-between; align-items: center; padding: 30px 0; border-bottom: 1px solid #eee; }
-        .book-row:last-child { border-bottom: none; }
-        .book-info { flex: 1; padding-right: 30px; }
-        .book-title { font-size: 22px; font-weight: bold; display: block; margin-bottom: 15px; color: #1a1a1a; }
-        .book-cover-container { text-align: center; width: 150px; flex-shrink: 0; }
-        .book-cover { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 4px 4px 10px rgba(0,0,0,0.1); }
-        .btn-group { margin-top: 20px; }
-        .btn { display: inline-block; background: #333; color: white; padding: 8px 24px; text-decoration: none; font-size: 15px; font-weight: bold; border-radius: 5px; margin-right: 12px; transition: all 0.3s ease; }
-        .btn-save { background: white; color: #333; border: 2px solid #333; }
-        .btn:hover { opacity: 0.8; transform: translateY(-1px); }
-        .pdf-badge { background: #d93025; color: white; padding: 2px 8px; font-size: 11px; font-weight: bold; border-radius: 4px; margin-left: 10px; vertical-align: middle; }
+        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; background: #fdfdfd; color: #333; padding: 40px 20px; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; text-align: center; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 50px; font-size: 24px; letter-spacing: 1px; }
+        
+        /* Gallery Item Style */
+        .book-item { margin-bottom: 60px; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Image Style - Clicking this opens the book */
+        .book-link { text-decoration: none; color: inherit; transition: opacity 0.3s; }
+        .book-link:hover { opacity: 0.7; }
+        
+        .book-cover { width: 220px; height: auto; border: 1px solid #eee; border-radius: 4px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        
+        /* Title Style - Clicking this also opens the book */
+        .book-title { font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px; cursor: pointer; }
+        
+        /* Small Save Button */
+        .btn-save { display: inline-block; background: transparent; color: #888; border: 1px solid #ddd; padding: 4px 12px; text-decoration: none; font-size: 12px; border-radius: 20px; transition: all 0.3s; }
+        .btn-save:hover { background: #eee; color: #333; border-color: #bbb; }
+        .pdf-label { font-size: 10px; font-weight: bold; color: #d93025; vertical-align: middle; margin-right: 4px; }
     </style>
 </head>
 <body>
@@ -26,88 +32,52 @@
 <div class="container">
     <h1>竹田Tキャンプ 冊子アーカイブ</h1>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2023冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/187UjipY40LlBfekAvGJZIRNymYzddX5d/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=187UjipY40LlBfekAvGJZIRNymYzddX5d" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/187UjipY40LlBfekAvGJZIRNymYzddX5d/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2023冊子.png" alt="2023 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2023冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=187UjipY40LlBfekAvGJZIRNymYzddX5d" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2020-21冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1WoomBZTn3t06wZxi3NV3Jys_fbktBWcs/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=1WoomBZTn3t06wZxi3NV3Jys_fbktBWcs" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/1WoomBZTn3t06wZxi3NV3Jys_fbktBWcs/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2020-21冊子.png" alt="2020-21 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2020-21冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1WoomBZTn3t06wZxi3NV3Jys_fbktBWcs" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2019冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1xjwV48OlftTOXgBwNmeXU9s6o57TltNL/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=1xjwV48OlftTOXgBwNmeXU9s6o57TltNL" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/1xjwV48OlftTOXgBwNmeXU9s6o57TltNL/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2019冊子.png" alt="2019 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2019冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1xjwV48OlftTOXgBwNmeXU9s6o57TltNL" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2018冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1CUWDDY9y9vR3DXXaZgQNW8jxpgFtzoK1/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=1CUWDDY9y9vR3DXXaZgQNW8jxpgFtzoK1" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/1CUWDDY9y9vR3DXXaZgQNW8jxpgFtzoK1/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2018冊子.png" alt="2018 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2018冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1CUWDDY9y9vR3DXXaZgQNW8jxpgFtzoK1" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2017冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1Od13qJgGiKIWhbAWN2LiJ527RCP6WsRs/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=1Od13qJgGiKIWhbAWN2LiJ527RCP6WsRs" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/1Od13qJgGiKIWhbAWN2LiJ527RCP6WsRs/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2017冊子.png" alt="2017 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2017冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1Od13qJgGiKIWhbAWN2LiJ527RCP6WsRs" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
-    <div class="book-row">
-        <div class="book-info">
-            <span class="book-title">竹田Tキャンプ2016冊子</span>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1xs1bXITQXvRZoOcLJPynf_Q5X4pLbTdl/view?usp=sharing" target="_blank" class="btn">読む</a>
-                <a href="https://drive.google.com/uc?export=download&id=1xs1bXITQXvRZoOcLJPynf_Q5X4pLbTdl" class="btn btn-save">保存</a>
-            </div>
-        </div>
-        <div class="book-cover-container">
+    <div class="book-item">
+        <a href="https://drive.google.com/file/d/1xs1bXITQXvRZoOcLJPynf_Q5X4pLbTdl/view?usp=sharing" target="_blank" class="book-link">
             <img src="竹田Tキャンプ2016冊子.png" alt="2016 Cover" class="book-cover">
-            <div style="font-size: 12px; margin-top: 10px; font-weight: bold;">PDF ARCHIVE <span class="pdf-badge">PDF</span></div>
-        </div>
+            <span class="book-title">竹田Tキャンプ2016冊子</span>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1xs1bXITQXvRZoOcLJPynf_Q5X4pLbTdl" class="btn-save"><span class="pdf-label">PDF</span>保存する</a>
     </div>
 
 </div>
